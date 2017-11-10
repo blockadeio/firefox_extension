@@ -1,1 +1,33 @@
-TDB
+{
+    "manifest_version": 2,
+    "name": "__MSG_appName__",
+    "description": "__MSG_appDesc__",
+    "default_locale": "en",
+    "version": "1.2.8",
+    "icons": {
+        "16": "resources/ico/16.png",
+        "48": "resources/ico/48.png",
+        "128": "resources/ico/128.png"
+    },
+    "browser_action": {
+        "default_title": "__MSG_appName__",
+        "default_icon": "resources/ico/16.png"
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; font-src 'self' data:;",
+    "permissions": ["tabs", "http://*/", "https://*/", "webRequest",
+                    "webRequestBlocking", "alarms", "notifications",
+                    "unlimitedStorage", "contextMenus"],
+    "background": {
+        "scripts": ["resources/external/jquery.js", "resources/external/md5.js",
+                    "resources/external/lzma-worker.min.js",
+                    "resources/js/core/utils.js", "resources/js/core/const.js",
+                    "resources/js/core/init.js",
+                    "resources/js/libs/blockade.js", "resources/js/core/alarms.js",
+                    "resources/js/core/background.js"],
+        "persistent": true
+    },
+    "options_ui": {
+      "page": "resources/static/options.html",
+      "browser_style": true
+    }
+}

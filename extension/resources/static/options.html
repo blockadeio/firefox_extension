@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="options_page">
+
+<head>
+    <title>Blockade Options</title>
+    <link rel="stylesheet" href="../external/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/options.css">
+    <script src="../external/jquery.js"></script>
+    <script src="../external/bootstrap.min.js"></script>
+    <script src="../js/core/utils.js"></script>
+    <style>
+        #status {
+            float: left;
+            padding-top: 7px;
+            font-weight: bold;
+        }
+    </style>
+    <meta charset="utf-8"/>
+</head>
+
+<body class="options_page">
+    <div id="wrapper">
+        <div id="options">
+            <fieldset id="format">
+                <legend><span id="serverUrl"></span>
+                    <span id="optionsServerUrlTooltip" class="glyphicon glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title=""></span>
+                </legend>
+                <div>
+                    <input style="margin-bottom: 3px;" type="text" width="200" id="cfg_cloudUrl" placeholder="Cloud address">
+                    <input style="margin-bottom: 3px;" type="text" width="200" id="cfg_contact" placeholder="Optional contact email">
+                    <input style="margin-bottom: 3px;" type="text" width="200" id="cfg_username" placeholder="Optional Username">
+                    <input style="margin-bottom: 3px;" type="text" width="200" id="cfg_apiKey" placeholder="Optional API Key">
+                    <button id="add_node" class="btn btn-xs btn-success">+</button>
+                </div>
+                <div id="error_message"></div>
+                <br>
+                <div id="node-wrapper">
+                    <table class="table table-condensed">
+                        <tbody id="nodes"></tbody>
+                    </table>
+                </div>
+
+                <legend><span id="showNotifications"></span>
+                    <span id="optionsShowNotificationsTooltip" class="glyphicon glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title=""></span>
+                </legend>
+                <input id="notifications" type="radio" name="cfg_notifications" value="true">
+                <label class="on" for=""></label>
+                <input id="notifications" type="radio" name="cfg_notifications" value="false" checked>
+                <label class="off" for=""></label>
+                <br><br>
+
+                <legend><span id="analystAssist"></span>
+                    <span id="optionsAnalystAssistTooltip" class="glyphicon glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title=""></span>
+                </legend>
+                <input id="feedback" type="radio" name="cfg_feedback" value="true">
+                <label class="on" for=""></label>
+                <input id="feedback" type="radio" name="cfg_feedback" value="false" checked>
+                <label class="off" for=""></label>
+                <br><br>
+<!--                 <sub>Send malicious events to a remote cloud node for processing by expert analysts. Only non-identifiable information and data related to the event will be sent.</sub>
+                <br><br>
+ -->
+                <legend><span id="debugMode"></span>
+                    <span id="optionsDebugModeTooltip" class="glyphicon glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement="right" title=""></span>
+                </legend>
+                <input id="debug" type="radio" name="cfg_debug" value="true">
+                <label class="on" for=""></label>
+                <input id="debug" type="radio" name="cfg_debug" value="false" checked>
+                <label class="off" for=""></label>
+                <br><br>
+
+                <legend><span id="resources">Resources</span></legend>
+                <p>&nbsp; Setup Page: <a href='setup.html'>Link</a></p>
+                <p>&nbsp; Test Page: <a href='demo.html'>Link</a></p>
+                <p>&nbsp; Project Page: <a href='https://www.blockade.io'>Link</a></p>
+            </fieldset>
+        </div>
+        <div id="action_panel">
+            <div id="status"></div>
+            <button id="save" type="button" class="btn btn-primary"></button>
+        </div>
+        <script src="../js/local/options.js"></script>
+    </div>
+</body>
+
+</html>

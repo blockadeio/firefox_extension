@@ -1,0 +1,175 @@
+{
+    "appName": {
+        "message": "Blockade",
+        "description": "Name of the extension as displayed in settings"
+    },
+    "appDesc": {
+        "message": "Blockiert den Zugriff auf bösartige Webseiten im Browser.",
+        "description": "Description of the extension as displayed in settings"
+    },
+    "dbgNoServer": {
+        "message": "Keine Server URL definiert",
+        "description": "Debug message to show when no server URL is defined"
+    },
+    "dbgSavedItems": {
+        "message": "$count$ Objekte in den lokalen Speicher geschrieben.",
+        "description": "Debug message outlining how many indicators were wrote to local storage",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "1"
+            }
+        }
+    },
+    "dbgAddIndicator": {
+        "message": "$count$ Indikatoren wurden an die Wolke geschickt.",
+        "description": "Debug message outlining how many indicators were sent to the cloud",
+        "placeholders": {
+            "count": {
+                "content": "$1",
+                "example": "1"
+            }
+        }
+    },
+    "dbgProcessedEvents": {
+        "message": "Ereignisse wurden verarbeitet und lokal gelöscht.",
+        "description": "Debug message after processing local event alerts"
+    },
+    "dbgNotificationCreated": {
+        "message": "Benachrichtigung erstellt.",
+        "description": "Debug message after creating a notification"
+    },
+    "dbgEnabed": {
+        "message": "Blockade aktiviert.",
+        "description": "Debug message shown when extension is enabled"
+    },
+    "dbgDisabled": {
+        "message": "Blockade deaktiviert.",
+        "description": "Debug message shown when extension is disabled"
+    },
+    "dbgBlockBypass": {
+        "message": "Erwünschter Zugriff.",
+        "description": "Debug message when a user requests to bypass blocking"
+    },
+    "dbgRawRequest": {
+        "message": "Ungefilterte Anfragen: $request$.",
+        "description": "Debug message showing the raw request that was flagged as malicious",
+        "placeholders": {
+            "request": {
+                "content": "$1"
+            }
+        }
+    },
+    "optionsOn": {
+        "message": "AN",
+        "description": "Value to display when a specific option is enabled"
+    },
+    "optionsOff": {
+        "message": "AUS",
+        "description": "Value to display when a specific option is disabled"
+    },
+    "optionsServerUrl": {
+        "message": "Server URL",
+        "description": "Label for the server URL option input"
+    },
+    "optionsShowNotifications": {
+        "message": "Pop-up Mitteilung",
+        "description": "Label for the notifications option"
+    },
+    "optionsAnalystAssist": {
+        "message": "Analyst Unterstützung",
+        "description": "Label for the analyst assist option"
+    },
+    "optionsDebugMode": {
+        "message": "Fehlerbehebungsmodus",
+        "description": "Label for the debug mode option"
+    },
+    "optionsConfigSaved": {
+        "message": "Deine Einstellungen wurden erfolgreich gespeichert!",
+        "description": "Message to show when the configuration is saved"
+    },
+    "optionsSaveConfig": {
+        "message": "Speichern",
+        "description": "Label to save the options configuration"
+    },
+    "optionsServerUrlTooltip": {
+        "message": "Server URL, welche nach Indikatoren für verdächtige oder bösartige Aktivitäten prüft.",
+        "description": "Tooltip data that shows up next to the option label"
+    },
+    "optionsShowNotificationsTooltip": {
+        "message": "Zeige Desktop Benachrichtigungen, wenn ein bösartiges Ereignis entdeckt wurde.",
+        "description": "Tooltip data that shows up next to the option label"
+    },
+    "optionsAnalystAssistTooltip": {
+        "message": "Schicke bösartiges Ereignis direkt an einen Analyst, der mehr Details über den Angriff identifizieren wird.",
+        "description": "Tooltip data that shows up next to the option label"
+    },
+    "optionsDebugModeTooltip": {
+        "message": "Lässt das Plugin mit allen Datenausgaben angeschaltet in einer Konsole laufen.",
+        "description": "Tooltip data that shows up next to the option label"
+    },
+    "notifyIndicatorSyncTitle": {
+        "message": "Indikatorendatenbank aktualisiert!",
+        "description": "Title of the notification window when the database updates."
+    },
+    "notifyRequestError": {
+        "message": "$url$ zeigt bei Anfrage einen $status$ Status.",
+        "description": "Message to display inside of the notification when a request for data fails",
+        "placeholders": {
+            "url": {
+                "content": "$1"
+            },
+            "status": {
+                "content": "$2"
+            }
+        }
+    },
+    "notifyRequestErrorTitle": {
+        "message": "Fehler bei Indikatorenaktualisierung!",
+        "description": "Title of the notification window when a request for data fails"
+    },
+    "notifyAlertTitle": {
+        "message": "Bösartiger Datenverkehr geblockt!",
+        "description": "Title of the notification window when a malicious event is detected"
+    },
+    "notifyAlertMessage": {
+        "message": "$hostname$ versuchte mittels $method$ Anfrage zu laden, mit Hilfe eines $type$ Elements.",
+        "description": "Message to display inside of the notification when a malicious event is detected",
+        "placeholders": {
+            "hostname": {
+                "content": "$1"
+            },
+            "method": {
+                "content": "$2"
+            },
+            "type": {
+                "content": "$3"
+            }
+        }
+    },
+    "notifyStatusAlertTitle": {
+        "message": "Status geändert!",
+        "description": "Title of the notification window when Blockade is turned on or off"
+    },
+    "warningProceedMessage": {
+        "message": "Ich akzeptiere das Risiko, lass much temporär auf die Resource zugreifen",
+        "description": "Hyperlink label displayed that allows a user to access a malicious resource"
+    },
+    "warningLeaveMessage": {
+        "message": "Lieber nicht!",
+        "description": "Hyperlink label displayed to take a user away from the malicious resource"
+    },
+    "warningAlertTitle": {
+        "message": "Verdächtige Webseite gemeldet!",
+        "description": "Main label to display to the user when they visit a malicious resource"
+    },
+    "warningAlertMessage": {
+        "message": "Blockadde hat die < b > $url$ < /b> als verdächtig gemeldet. Dies Webseite könnte versuchen dich zu etwas gefährlichen zu überreden, wie das Installieren von Software oder dem Preisgeben von persönlichen Informationen (z.B. Passwörter, Telefonnummern oder Kreditkartennummern. Schau dir die <a class='small-link' data-toggle='collapse' href='#collapseExample' aria-expanded='false' aria-controls='collapseExample'>ungefilterten Details an</a >.",
+        "description": "Detailed message shown to the user when they visit a malicious resource",
+        "placeholders": {
+            "url": {
+                "content": "$1"
+            }
+        }
+    }
+}
