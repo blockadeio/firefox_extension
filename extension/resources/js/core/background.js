@@ -89,7 +89,6 @@ chrome.webRequest.onBeforeRequest.addListener(
         localStorage[hostname] = JSON.stringify(event);
         var redirect = chrome.extension.getURL(WARNING_PAGE);
         redirect += `?redirect=${data.url}`;
-        console.log("REDIRECT:", redirect);
         // _gaq.push(['_trackEvent', 'extension', 'threat_blocked']);
         return {redirectUrl: redirect};
     },

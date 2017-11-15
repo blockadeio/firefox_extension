@@ -3,7 +3,7 @@
     "name": "__MSG_appName__",
     "description": "__MSG_appDesc__",
     "default_locale": "en",
-    "version": "1.2.8",
+    "version": "1.2.9",
     "icons": {
         "16": "resources/ico/16.png",
         "48": "resources/ico/48.png",
@@ -13,7 +13,7 @@
         "default_title": "__MSG_appName__",
         "default_icon": "resources/ico/16.png"
     },
-    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; font-src 'self' data:;",
+    "content_security_policy": "script-src 'self'; object-src 'self';",
     "permissions": ["tabs", "http://*/", "https://*/", "webRequest",
                     "webRequestBlocking", "alarms", "notifications",
                     "unlimitedStorage", "contextMenus"],
@@ -29,5 +29,6 @@
     "options_ui": {
       "page": "resources/static/options.html",
       "browser_style": true
-    }
+    },
+    "web_accessible_resources": ["resources/static/warning.html"]
 }
