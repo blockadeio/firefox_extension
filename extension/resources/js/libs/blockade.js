@@ -117,5 +117,6 @@ var BlockadeIO = function() {
     };
 };
 
+if (localStorage.cfg_debug === 'true') { console.log("Setting up a new BlockadeIO"); }
 var blockade = new BlockadeIO();
 blockade.init();

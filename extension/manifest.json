@@ -30,5 +30,6 @@
       "page": "resources/static/options.html",
       "browser_style": true
     },
-    "web_accessible_resources": ["resources/static/warning.html"]
+    "web_accessible_resources": ["resources/static/warning.html",
+                                 "resources/external/bootstrap.min.css"]
 }

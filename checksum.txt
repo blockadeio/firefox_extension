@@ -1,4 +1,3 @@
-extension/_locales/init , e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 extension/_locales/de/messages.json , 62b18ee9f169fd10beeb827d30c71f980e7f5e44ee7bf446f0d4e904e19574b3
 extension/_locales/en/messages.json , 6bf918ea5f9f189d37ef54b6d7a4517d62234543e9fe967fcd65bf4d1e5efe7b
 extension/_locales/es/messages.json , 18e6406d54e2cced9e55776e2d084a289b99c23d36210745321539c366db26b8
