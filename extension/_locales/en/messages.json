@@ -201,7 +201,7 @@
         "description": "Message to show within the demo page, paragraph one."
     },
     "demoP2": {
-        "message": "<p>For this demo page, we blocked the above image from loading. If you are able to see this image, then something went wrong. Consider reinstalling Blockade or file an issue <a href='https://github.com/blockadeio/chrome_extension/issues'>here</a>.</p>",
+        "message": "<p>For this demo page, we blocked the above image from loading. If you are able to see this image, then something went wrong. Consider reinstalling Blockade or file an issue <a href='https://github.com/blockadeio/firefox_extension/issues'>here</a>.</p>",
         "description": "Message to show within the demo page, paragraph two."
     }
 }
